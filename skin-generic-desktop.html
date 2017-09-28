@@ -1,0 +1,1326 @@
+<!doctype html>
+<html>
+
+<head>
+    
+    <!--<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">-->
+
+
+
+    <style>
+        /*
+    top header                  333333
+    bottom header               3a3e44
+
+    open menu bg, light grey    ededed
+    menu text                   7e8080
+
+    text, dark grey             3a3e44
+
+    primary                     4fb7ac  rgb(79,183,172)
+    blue                        2FBCE6
+    pink                        e5457d
+    orange                      e73b2b
+
+    body bg                     f1f1f1
+    */
+
+        
+
+        
+        
+        .ux-dropdown--language,
+        nav .fa-chevron-right,
+        .ux-grid-viewcontrols,
+        nav .fa-chevron-down,
+        .ux-orderItemSorting,
+        .ux-productInfo-packageDetailsMsg,
+        .ux-navbar-form--searchControl .search-submit {
+            display: none !important;
+        }
+
+        .ux-titleText {
+            display: none;
+        }
+
+        .store-category-tile-title {
+            display: none;
+        }
+
+        .ws-Headings-SubheadingFontSize.ux-section-heading.webskin-heading.e- {
+            display: none;
+        }
+
+        .content-wrapper {
+            padding-top: 30px !important;
+            min-height: -webkit-fill-available;
+        }
+
+        .ux-app-escv .ux-titleAndAccountWrapper:before {
+            border: none !important;
+        }
+
+        #usi-app-escv {
+            margin-bottom: 0px !important;
+        }
+
+        html,
+        body {
+            -webkit-tap-highlight-color: transparent;
+            text-rendering: optimizeLegibility;
+        }
+
+        .ux-webskin-top-row.row {
+            box-sizing: none !important;
+        }
+
+        .ux-webskin-top-container.container {
+            box-sizing: none !important;
+        }
+
+
+        .modal-open {
+            overflow: visible;
+        }
+
+        body {
+
+            font-family: 'Roboto', sans-serif !important;
+            font-weight: 400;
+            color: #3a3e44;
+            background-color: #ebebeb;
+            width: 100%;
+            min-height: 100%;
+            background-image: url('https://images.excel.london/images/evs-bg.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .content-wrapper.row.col-xs-12.col-sm-12.col-md-12.col-lg-12.container-fluid {
+            background-color: #f1f1f1 !important;
+            padding: 50px !important;
+            position: absolute;
+            min-height: 1200px;
+        }
+
+        .main-navigation {
+            background-color: transparent;
+            padding-right: 30px !important;
+        }
+
+        .main-navigation>* {
+            background-color: #fff !important;
+        }
+
+        .ux-titleAndAccountWrapper {
+            padding-left: 50px;
+        }
+        /* Header */
+
+        #center.ux-webskin-center {
+            margin-top: -3px !important;
+        }
+
+        .main-content-area.col-xs-12.col-sm-9.col-lg-9 {
+            position: inherit;
+        }
+
+        .ux-btn.btn.navbar-btn.ws-Buttons-NavigationColor.ux-CartButton {
+            max-width: 140px;
+            position: absolute;
+            right: -118%;
+            top: -5px;
+        }
+
+        .ux-dropdown.ux-dropdown--booth.dropdown {
+            top: 8px;
+            left: -19px;
+        }
+        
+        #okButton.usi-button.usi-continue.ws-Buttons-NavigationColor.track-continue {
+            position: absolute;
+            top: 221px;
+            right: 20px;
+        }
+
+        .usi-button.buttonIcon span {
+            padding: 2px !important;
+        }
+
+        button {
+            box-shadow: none !important;
+        }
+
+        .cart-text {
+            top: 22px;
+            position: absolute;
+            right: 24px;
+        }
+        
+        .ws-Accent-TextColor.ws-Buttons-NavigationColor.make-payment.usi-button{
+            display:none !important;
+        }
+        
+        .ux-banner--user .navbar-nav > li {
+            border:0px !important;
+        }
+
+        .ux-banner--orderItemProcessing.row {
+            position: absolute;
+            top: -100px;
+            left: -39%;
+            right: 0px;
+            width: 103%;
+            padding-right: 25px;
+            padding-left: 75px;
+        }
+
+        .form-control.ux-search-box {
+            min-width: 400px;
+            background-color: #3a3e44 !important;
+            padding-left: 0px;
+            max-width: 400px;
+            height: 35px !important;
+            min-height: 1px !important;
+            color: #fff !important;
+            margin-top: 5px;
+        }
+
+        .event-title {
+            color: #4fb7ac;
+            font-size: 14px;
+            float: right;
+            margin-right: 153px;
+            padding-bottom: 14px;
+            padding-top: 8px;
+            text-transform: none !important;
+        }
+
+
+        .ws-Accent-TextColor.ws-Buttons-NavigationColor.make-payment.btn {
+            color: #fff !important;
+            font-size: 95% !important;
+        }
+
+        .btn-primary {
+            background-color: #3a3e44 !important;
+            color: #fff;
+            background-image: none;
+            border: none;
+            padding: 10px 20px;
+        }
+
+
+
+        .ux-banner--orderItemProcessing.row {
+            min-width: 100%;
+        }
+
+
+        .flex-fix {
+            padding-bottom: 5px;
+        }
+
+        .icon.navButtonIcon.icon-shopping-cart {
+            color: #999999;
+        }
+
+        .ux-navbarRightContainer.col-xs-2.col-sm-5.col-md-4.col-lg-3.pull-right {
+            float: right !important;
+            max-width: 160px;
+        }
+
+        .ux-banner--orderItemProcessing span.darken {
+            background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0))!important;
+            border-right: none;
+            height: 20px;
+            padding: 0px;
+        }
+
+        .content-wrapper.row.col-xs-12.col-sm-12.col-md-12.col-lg-12.container-fluid {
+            overflow: visible !important;
+        }
+
+        .ux-body-container {
+            overflow: visible !important;
+        }
+
+        .cart-text {
+            color: #e9e9e9;
+        }
+
+        .ux-titleAndAccountWrapper.ws-Accent-AccentBackgroundColor.ws-Accent-AccentTextColor,
+        .ux-titleAndAccountWrapper ws-Accent-AccentBackgroundColor ws-Accent-AccentTextColor sticky {
+            min-width: 100% !important;
+            padding-left: 60px;
+            padding-right: 50px;
+        }
+
+
+        .menu-link.ws-Links-LinkTextColor {
+            color: #3a3e44 !important;
+        }
+
+        .ux-app-escv .ux-titleAndAccountWrapper:before {
+            background-color: #333333;
+            width: 100% !important;
+            margin-left: 0px;
+            position: absolute;
+            left: 0%;
+        }
+
+        .ux-eventInfo {
+            background-color: #3a3e44;
+            width: 100% !important;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h1>span,
+        h2>span,
+        h3>span,
+        h4>span {
+            font-weight: 300 !important;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="button"],
+        button,
+        select,
+        textarea,
+        .form-control {
+            font-weight: 400 !important;
+            color: #3a3e44 !important;
+            background-color: #fff !important;
+            font-size: 16px !important;
+            height: 50px !important;
+            border: none !important;
+            box-shadow: 0 0 15px rgba(0, 0, 0, .06);
+            border-radius: 0px !important;
+        }
+
+
+        .ux-app-escv .content-wrapper {
+            overflow: visible;
+        }
+
+        .signin-header {
+            font-weight: 300 !important;
+        }
+
+        .ux-container-task {
+            background-color: #f1f1f1;
+            padding: 30px;
+        }
+
+        .ux-container-task h2 {
+            margin: 30px 0;
+        }
+
+        .ux-container-task p.ux-alert-instructions {
+            color: #4fb7ac;
+            margin-bottom: 30px !important;
+        }
+
+
+
+        #Button1.btn.ux-btn.ux-btn-add-cart.ws-Buttons-NavigationColor {
+            display: none;
+        }
+        /*Left Nav*/
+
+        .utilities.ws-Accent-AccentBackgroundColor {
+            background-color: #fff;
+        }
+
+
+        .ux-nav-list .ux-navLevel-1:nth-child(2),
+        .ux-nav-list .ux-navLevel-1:nth-child(3),
+        .ux-nav-list .ux-navLevel-1:nth-child(4),
+        .ux-nav-list .ux-navLevel-1:nth-child(5),
+        .ux-nav-list .ux-navLevel-1:nth-child(6),
+        .ux-nav-list .ux-navLevel-1:nth-child(7) {
+            border-left: 7px solid #4fb7ac;
+            margin-bottom: 0px;
+            padding-left: 8px !important;
+        }
+
+        .menu-link.ws-Links-LinkTextColor {
+
+            width: 100%;
+            display: block;
+            padding-left: 19px;
+            padding-bottom: 20px;
+        }
+
+        .menu-link.ws-Links-CurrentLinkTextColor {
+            width: 100%;
+            display: block;
+            padding-left: 19px;
+            padding-bottom: 20px;
+        }
+
+        .ux-nav-list .ux-navLevel-2 {
+            margin: 0px !important;
+        }
+
+        .ux-nav-list .ux-navLevel-1:hover,
+        .ux-nav-list .ux-navLevel-1:nth-child(2):hover,
+        .ux-nav-list .ux-navLevel-1:nth-child(3):hover,
+        .ux-nav-list .ux-navLevel-1:nth-child(4):hover,
+        .ux-nav-list .ux-navLevel-1:nth-child(5):hover,
+        .ux-nav-list .ux-navLevel-1:nth-child(6):hover,
+        .ux-nav-list .ux-navLevel-1:nth-child(7):hover,
+        .ux-nav-list .ux-navLevel-1:nth-child(8):hover,
+        .ux-nav-list .ux-navLevel-1:nth-child(9):hover,
+        .ux-nav-list .ux-navLevel-1:nth-child(10):hover,
+        .ux-nav-list .ux-navLevel-1:nth-child(11):hover,
+        .ux-nav-list .ux-navLevel-1:nth-child(12):hover {
+            background-color: #ededed;
+        }
+
+        .ux-nav-list .ux-navLevel-2,
+        .ux-nav-list .ux-navLevel-2:nth-child(2),
+        .ux-nav-list .ux-navLevel-2:nth-child(3),
+        .ux-nav-list .ux-navLevel-2:nth-child(4),
+        .ux-nav-list .ux-navLevel-2:nth-child(5),
+        .ux-nav-list .ux-navLevel-2:nth-child(6),
+        .ux-nav-list .ux-navLevel-2:nth-child(7),
+        .ux-nav-list .ux-navLevel-2:nth-child(8),
+        .ux-nav-list .ux-navLevel-2:nth-child(9),
+        .ux-nav-list .ux-navLevel-2:nth-child(10),
+        .ux-nav-list .ux-navLevel-2:nth-child(11),
+        .ux-nav-list .ux-navLevel-2:nth-child(12) {
+            padding-top: 0px !important;
+            width: 100%;
+            display: block;
+        }
+
+        .ux-nav-list .ux-navLevel-2:hover,
+        .ux-nav-list .ux-navLevel-2:nth-child(2):hover,
+        .ux-nav-list .ux-navLevel-2:nth-child(3):hover,
+        .ux-nav-list .ux-navLevel-2:nth-child(4):hover,
+        .ux-nav-list .ux-navLevel-2:nth-child(5):hover,
+        .ux-nav-list .ux-navLevel-2:nth-child(6):hover,
+        .ux-nav-list .ux-navLevel-2:nth-child(7):hover,
+        .ux-nav-list .ux-navLevel-2:nth-child(8):hover,
+        .ux-nav-list .ux-navLevel-2:nth-child(9):hover,
+        .ux-nav-list .ux-navLevel-2:nth-child(10):hover,
+        .ux-nav-list .ux-navLevel-2:nth-child(11):hover,
+        .ux-nav-list .ux-navLevel-2:nth-child(12):hover {
+            /*background-color: #a9a9a9;*/
+        }
+
+
+        .opener.fa.fa-chevron-down,
+        .opener.fa.fa-chevron-right,
+        .opener.fa.fa-chevron-down.open,
+        .opener.fa.fa-chevron-right.open {
+            color: #4fb7ac;
+        }
+
+        .ux-nav-list.ux-main-navigation {
+            padding-top: 0px !important;
+        }
+
+
+        div.ux-widget-heading.deux-border-shade-1 {
+            padding-left: 10px !important;
+            color: #4fb7ac;
+            background-color: #fff;
+            border-bottom: 0px solid #fff !important;
+        }
+
+        .ws-Links-CurrentLinkTextColor {
+            color: #3a3e44 !important;
+        }
+        /* Login */
+
+        .ws-Accent-AccentBackgroundColor {
+            /*background-color: transparent !important;*/
+        }
+
+        div.layoutContainer {
+            max-width: none !important;
+        }
+
+        .content-wrapper.row.col-xs-12.col-sm-12.col-md-12.col-lg-12 {
+            overflow: visible !important;
+        }
+
+        #applicationHost>div>div {
+            background-image: url('https://images.excel.london/images//ESCV_IMAGES/skin-generic/evs-landinglogo.png');
+            background-repeat: no-repeat;
+            background-position: 85% 48px;
+            background-size: 140px 120px;
+        }
+
+        .ux-loginContainer.deux-background-shade-1 {
+            background-color: transparent !important;
+            position: relative;
+            height: 500px;
+            margin-top: 220px;
+        }
+
+        .ux-loginContainer.deux-background-shade-1>div:nth-child(1),
+        .ux-loginContainer.deux-background-shade-1>div:nth-child(2) {
+            position: absolute;
+        }
+
+
+        .ux-loginContainer.deux-background-shade-1>div:nth-child(1) {
+            right: 0px;
+            background-color: #3a3e44;
+            color: #717884;
+            width: 40%;
+        }
+
+        .signin-header {
+            color: #fff;
+        }
+
+        .ux-signUpPanel {
+            border: none;
+        }
+
+        .item-signup-inner:before {
+            content: 'Welcome to ExCeL Venue Services';
+            color: #fff;
+            font-size: 3em;
+            font-weight: 200;
+            margin: 0px 0 140px 0;
+            display: inline-block;
+            width: 400px;
+            line-height: 1.4em;
+        }
+
+        .ux-signIn-instructions {
+            margin: 5px 0 25px 0;
+        }
+
+        .login-subheader {
+            color: #fff;
+            margin: 5px 0;
+        }
+
+        .ux-loginContainer.deux-background-shade-1>div:nth-child(1) a {
+            color: #4fb7ac;
+        }
+
+        .ux-loginContainer.deux-background-shade-1>div:nth-child(2) {
+            left: 0px;
+            width: 60%;
+        }
+
+        .item-signup-inner {
+            padding: 30px 0px !important;
+            align-self: initial !important;
+        }
+
+        .item-signin-inner label {
+            font-weight: 400;
+            font-size: 14px;
+        }
+
+        .ux-container-order-details .ux-itemDetails-priceContainer {
+            margin-top: 10px !important;
+        }
+
+        .owl-buttons i {
+            color: #c9c9c9 !important;
+        }
+
+        input#userId,
+        input#password {
+            border-radius: 0px;
+            height: 50px;
+            background-color: #fff !important;
+            border: none;
+            box-shadow: none;
+        }
+
+        input:-webkit-autofill,
+        textarea:-webkit-autofill,
+        select:-webkit-autofill {
+            -webkit-box-shadow: 0 0 0px 1000px #fff inset;
+            !important;
+        }
+
+        .ux-button-sign-in.ws-Buttons-NavigationColor.signup-btn,
+        .signin-misc-row button {
+            background-color: #fff !important;
+            width: 160px;
+            font-weight: 400;
+            border-radius: 0px !important;
+            color: #3a3e44 !important;
+        }
+        
+        .usi-button.usi-placeNewOrder.ws-Buttons-NavigationColor{
+            display:none !important;
+        }
+        
+        .ws-Buttons-NavigationColor {
+            background-color: #3a3e44 !important;
+            color: #fff !important;
+            border-radius: 0px !important;
+            padding: 10px 20px !important;
+        }
+
+        .ux-banner-button>.ws-Buttons-NavigationColor {
+            background-color: transparent !important;
+        }
+
+        .ux-button-sign-in>span {
+            color: #3a3e44 !important;
+            font-weight: 400;
+        }
+
+        .signin-misc-row {
+            margin-top: 15px;
+        }
+
+        .signin-misc-row button {
+            width: 120px;
+            font-weight: 400 !important;
+        }
+        /*account and booth selection*/
+
+        .ux-sectionMaker-additionalClassSection.deux-background-shade-1 {
+            background-color: rgba(51, 51, 51, 0.31) !important;
+        }
+
+        .content-wrapper.row.col-xs-12.col-sm-12.col-md-12.col-lg-12 {
+            background-color: #f1f1f1;
+        }
+
+        .ux-button-footer.ux-app-sop-footer.ux-buttons-task.deux-background-shade-1.deux-border-shade-2 {
+            margin-top: 200px;
+            background-color: rgba(51, 51, 51, 0.31) !important;
+        }
+        /* menu */
+
+        div.ux-widget-heading.deux-border-shade-1 {
+            padding-left: 26px !important;
+            font-weight: 500;
+            text-shadow: none;
+        }
+
+
+        .menu-link.ws-Links-CurrentLinkTextColor {
+            font-size: 14px;
+        }
+
+        .menu-link.ws-Links-CurrentLinkTextColor,
+        .menu-link.ws-Links-LinkTextColor {
+            width: 100%;
+            display: block;
+            padding-left: 12px;
+            padding-bottom: 10px;
+            padding-top: 10px;
+            font-size: 14px;
+        }
+
+        .ux-navLevel-1.expanded {
+            /*background-color: #ededed;*/
+            border-color: #3d968c !important;
+        }
+
+        .ux-nav--link.ux-navLevel-1 {
+            margin: 0px;
+        }
+        /* category */
+
+        .ux-tile-wrapper-image {
+            border-bottom: none !important;
+            margin-bottom: 0px !important;
+        }
+
+        .ux-priceListTile .ux-tile-wrapper-image {
+            padding-bottom: 0px !important;
+        }
+
+        .ux-tile-wrapper-item {
+            height: 300px;
+            background-color: #000;
+            border: none;
+        }
+
+        .ux-priceListTile .ux-tile-item-price {
+            background-color: #fff;
+            padding: 15px 0;
+            height: 46px;
+        }
+
+        .ux-priceListTile .ux-tile-item-price>span {
+            display: inline-block;
+            float: left;
+            margin-left: 15px;
+            color: #4fb7ac;
+        }
+
+        .ux-priceListTile .ux-tile-item-title {
+            margin: 0px;
+            height: 50px;
+            font-weight: 400;
+            text-align: left;
+            padding: 15px 15px 0 15px;
+            background-color: #fff;
+        }
+
+        .ux-priceListTile .ux-carousel-inner-wrapper,
+        .ux-tile-wrapper-item {
+            padding: 0px;
+        }
+
+        .owl-wrapper {
+            height: 320px;
+        }
+
+        .owl-wrapper-outer {
+            overflow-y: visible !important;
+        }
+
+        .ux-priceListTile .ux-tile-wrapper-image {
+            opacity: .8;
+            height: 204px;
+        }
+
+        .ux-app-sop .ux-grid-content.ux-grid-tiles .ux-grid-row--readOnly {
+            border: none;
+        }
+
+        .store-category-tile {
+            width: 100%;
+            display: block;
+            height: 270px;
+            position: relative;
+            margin-bottom: 25px;
+            background-color: #000;
+            font-size: 14px
+        }
+
+        .store-category-tile.home>div {
+            background-size: cover !important;
+        }
+        
+        .store-category-tile>span.text-primary{
+            font-size: 16px;   
+        }
+
+        .store-category-tile>div {
+            height: 100%;
+            width: 100%;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-color: #fff;
+            opacity: .7;
+        }
+
+        .store-category-tile,
+        .deux-hover-shade-3 {
+            border: 1px solid #ebebeb;
+        }
+
+        .store-category-tile,
+        .deux-hover-shade-3 {
+            -webkit-transition: all .4s;
+            transition: all .4s;
+            -ms-transition: all .4s;
+        }
+
+        .store-category-tile:hover,
+        .deux-hover-shade-3:hover {
+            -ms-transform: scale(1.04, 1.04);
+            -webkit-transform: scale(1.04, 1.04);
+            transform: scale(1.04, 1.04);
+            box-shadow: 0 0 50px rgba(52, 161, 164, .3);
+            -moz-box-shadow: 0 0 50px rgba(52, 161, 164, .3);
+            -webkit-box-shadow: 0 0 50px rgba(52, 161, 164, .3);
+            border: 1px solid #4fb7ac !important;
+        }
+
+        .store-category-tile:hover>span {
+            height: 180px;
+        }
+
+        .store-category-tile>span {
+            display: block;
+            width: 100%;
+            padding: 15px 20px;
+            background-color: #fff;
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            color: #3a3e44;
+            font-weight: 400;
+            height: 50px;
+            overflow: hidden;
+            -webkit-transition: all .4s;
+            transition: all .4s;
+            -ms-transition: all .4s;
+        }
+
+        .store-category-tile>span>span {
+            display: block;
+            margin-top: 20px;
+            font-size: .8rem;
+        }
+
+        .store-category-tile button {
+            position: absolute;
+            right: 0px;
+            top: 0px;
+            background-color: rgba(0, 0, 0, .5) !important;
+            border: none;
+            color: #fff !important;
+            z-index: 999;
+            font-weight: 400 !important;
+            padding: 5px 20px !important;
+            font-size: 14px !important;
+        }
+
+        .ux-gridWrapper--tile {
+            padding: 0px 20px 20px 0 !important;
+        }
+
+        .ux-tile-wrapper-image img {
+            height: 100%;
+        }
+        /* item view */
+
+        .panel-heading.ux-noteCaption,
+        .ux-topControlLabel {
+            color: #4fb7ac;
+            margin: 15px 0 !important;
+            font-weight: 500 !important;
+        }
+
+        .ux-readmore a {
+            color: #4fb7ac !important;
+            border-style: dotted;
+        }
+
+        .panel.ux-note-panel {
+            padding: 0px;
+        }
+
+        .panel.ux-note-panel ul {
+            margin: 0px !important;
+            color: #3a3e44 !important;
+        }
+
+        .ux-itemDetails-displayItemPrice,
+        .ux-itemDetails-totalPriceContainer {
+            color: #4fb7ac !important;
+        }
+
+        .ux-quantity-total-controls {
+            border-bottom: 1px solid #c9c9c9 !important;
+            color: #4fb7ac !important;
+        }
+
+        .ux-orderDetails-quantityAndTotalWrapper {
+            margin-top: 22px;
+            padding: 0px;
+            border: none !important;
+            border-bottom: 1px solid #c9c9c9 !important;
+            background-color: #fff !important;
+            padding-bottom: 35px !important;
+        }
+
+        span.ux-itemDetails-totalPriceText {
+            font-weight: 400;
+            font-size: 1.25rem;
+        }
+
+        .ux-priceListTile.ux-itemDetailsUpsellRelatedWrapper {
+            border-radius: 0px;
+            border: none !important;
+            border-top: 1px solid #c9c9c9 !important;
+            background-color: #fff !important;
+        }
+
+        .ux-priceListTile .owl-carousel .ux-tile-wrapper-item {
+            width: auto;
+            display: block;
+            background: #fff;
+            border: 1px solid #c9c9c9;
+            border-radius: 0px;
+        }
+
+        .ux-productInfo-productImage {
+            height: 260px;
+            background-color: #000;
+            padding: 0px;
+        }
+
+        .ux-container-order-details .ux-image-wrapper--itemDetails,
+        .ux-cartItemDetails .ux-image-wrapper--itemDetails {
+            height: 100%;
+            background-color: #fff;
+            float: none;
+            opacity: .9;
+            overflow: hidden;
+            /* this hides multiple images for item */
+        }
+
+        .ux-productInfo-productDescription {
+            padding: 0px 0 0 30px;
+        }
+
+
+        .bootstrap-touchspin>input,
+        .ux-field-dropdown {
+            border-radius: 0px;
+        }
+
+        .ux-container-order-details .ux-image--itemDetails,
+        .ux-cartItemDetails .ux-image--itemDetails {
+            height: 100% !important;
+        }
+
+        .ux-container-order-details .ux-addToCartContainer button,
+        .ux-cartItemDetails .ux-addToCartContainer button,
+        .ws-Buttons-ActionColor {
+            padding: 14px 20px !important;
+            background-color: #3a3e44 !important;
+            color: #fff !important;
+            border-radius: 0px !important;
+        }
+
+        .ux-container-order-details .ux-addToCartContainer button .darken,
+        .ux-cartItemDetails .ux-addToCartContainer button .darken {
+            display: none;
+        }
+
+        .modal-content .ux-sectionMaker {
+            border: 1px solid #97d5ce;
+            background-color: #d4edeb;
+            margin: 10px;
+        }
+
+        .modal-content .ux-sectionMaker label {
+            color: #4fb7ac;
+        }
+
+        .ux-sectionMaker input {
+            border-radius: 0px !important;
+            border: none;
+        }
+
+        .ux-sectionMaker-additionalClassSection.deux-background-shade-1 {
+            background-color: transparent !important;
+        }
+
+        .ux-container-order-details .ux-sectionMaker-additionalClassSection,
+        .ux-cartItemDetails .ux-sectionMaker-additionalClassSection {
+            padding: 15px;
+            margin-bottom: 0px;
+            border: none;
+        }
+        /* homepage */
+/*
+        .callout-hero {
+            background-image: url('https://images.excel.london/images/evs-splash.jpg');
+            background-position: center;
+            background-size: cover;
+            margin-bottom: 30px;
+            overflow: hidden;
+        }
+
+        .callout-hero h4 {
+            color: #fff;
+            margin: 70px 0px 0 25px;
+        }
+
+        .callout-hero>.row {
+            
+            background: -moz-linear-gradient(-45deg, rgba(79, 183, 172, 0.6) 0%, rgba(47, 188, 230, 0.6) 100%);
+            
+            background: -webkit-linear-gradient(-45deg, rgba(79, 183, 172, 0.6) 0%, rgba(47, 188, 230, 0.6) 100%);
+            
+            background: linear-gradient(135deg, rgba(79, 183, 172, 0.6) 0%, rgba(47, 188, 230, 0.6) 100%);
+            
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#994fb7ac', endColorstr='#992fbce6', GradientType=1);
+            
+        }
+
+        .callout-hero ul {
+            margin: 0px;
+            height: 100%;
+        }
+
+        .callout-hero li {
+            background-color: rgba(0, 0, 0, .16);
+            color: #fff;
+            border: none;
+            margin: 0px;
+        }
+
+        .callout-hero h1,
+        .callout-hero p {
+            margin: 30px 25px;
+            color: #fff;
+        }*/
+        
+        #evs-carousel{
+            background-color: #000;
+            height: 270px;
+            margin-bottom: 25px;
+        }
+        
+        #evs-carousel .item, #evs-carousel .carousel-inner{
+            height: 270px;
+        }
+        
+        #evs-carousel .item{
+            background-size: cover;
+            background-position: center;
+        }
+        
+        #evs-carousel .carousel-caption{
+            bottom: 0px;
+            left: 0px;
+            right: 0px;
+            background-color: #fff;
+            color: #333;
+            padding: 15px 20px;
+            font-size: 16px;
+            text-align: left;
+            text-shadow: none;
+        }
+        
+        .carousel-indicators .active {
+            background-color:#4fb7ac;
+            border: 1px solid #4fb7ac;
+        }
+        
+        .carousel-indicators li {
+            background-color:#fff;
+            border: 1px solid #4fb7ac;
+        }
+        
+        .carousel-indicators {
+            right: 0px !important;
+            width: 100px;
+            left: auto;
+            bottom: 5px;
+        }
+        
+
+
+
+        .panel-default>.panel-heading {
+            padding: 15px 25px;
+            font-weight: 400;
+            color: #4fb7ac;
+            background-color: #fff;
+        }
+
+        .panel-default {
+            border-color: #fff;
+        }
+
+
+
+        .list-group-item {
+            padding: 8px 25px;
+        }
+        /* Admin pages */
+
+        .ux-section-heading {
+            border: none;
+            margin: 0 0 30px 25px;
+        }
+
+        .ux-section-heading button {
+            background-color: #fff !important;
+            color: #3a3e44 !important;
+            padding: 10px 20px !important;
+            border: none !important;
+        }
+
+        .ux-button-secondary {
+            background-color: #fff !important;
+            color: #3a3e44 !important;
+        }
+
+        h1 button {
+            background-color: #3a3e44;
+            color: #fff;
+        }
+
+        .ux-manageAccountPage .ux-section-heading {
+            margin: 0 0 30px 0px;
+        }
+
+        .ux-app-escv p.alert.ux-alert-instructions {
+            color: #4fb7ac !important;
+            font-weight: 400 !important;
+            border: 1px solid #4fb7ac !important;
+            padding: 15px !important;
+            margin-bottom: 30px !important;
+        }
+
+        button.text-primary,
+        .text-primary {
+            color: #4fb7ac !important;
+            font-weight: 300 !important;
+        }
+        
+        .text-info{
+            color: #2FBCE6;
+        }
+        
+        .text-warning{
+            color: #f28b2d;
+        }
+        
+        .text-danger{
+            color: #e5457d;
+        }
+
+        .ux-manageAccountPage select {
+            border: none !important;
+        }
+
+
+        .panel-note-list h3 {
+            padding: 10px 25px;
+        }
+
+
+        .modal-backdrop {
+            background-color: #222 !important;
+        }
+        /* Booth number entery */
+
+        .ux-button-footer.ux-app-sop-footer.ux-buttons-task.deux-background-shade-1.deux-border-shade-2 {
+            background-color: transparent !important;
+            margin-top: 320px;
+        }
+        /* Mobile */
+
+        @media only screen and (max-width: 768px) {
+
+
+            body,
+            #applicationHost>div>div {
+                background-image: none;
+            }
+
+            .ux-loginContainer.deux-background-shade-1>div:nth-child(1),
+            .ux-loginContainer.deux-background-shade-1>div:nth-child(2) {
+                position: relative;
+            }
+
+            .ux-loginContainer.deux-background-shade-1>div:nth-child(1) {
+                width: 100%;
+            }
+
+            .ux-loginContainer.deux-background-shade-1>div:nth-child(2) {
+                width: 100%;
+            }
+
+            .item-signup-inner:before {
+                display: none;
+            }
+
+            .ux-loginContainer.deux-background-shade-1 {
+                margin: 0px;
+                height: auto !important;
+            }
+
+            .item-signup-inner {
+                padding: 30px !important;
+            }
+
+            .item-signup-inner .signin-header,
+            .item-signup-inner .login-subheader {
+                color: #3a3e44 !important
+            }
+
+
+            .content-wrapper.row.col-xs-12.col-sm-12.col-md-12.col-lg-12.container-fluid {
+                padding: 0px !important;
+            }
+
+
+
+
+
+
+
+            .ux-form-template {
+                margin-top: 15px;
+            }
+
+            .ux-mobileNav button {
+                color: #fff !important;
+                background-color: #333 !important;
+                border: none !important;
+                box-shadow: none;
+                opacity: 1 !important;
+            }
+
+            .ux-mobileNav .eventBannerWrapper,
+            .ux-mobileNav .ux-mobileSearch,
+            .form-control.ux-search-box {
+                background-color: #333 !important;
+            }
+
+            .form-control.ux-search-box {
+                width: 100%;
+                border-bottom: 1px solid #fff !important;
+            }
+
+            .ux-mobileBoothLanguageAccountCart {
+                height: auto !important;
+                border: none !important;
+            }
+
+            .ux-mobileBoothLanguageAccountCart>button {
+                border: none !important;
+                box-shadow: none;
+                color: #fff !important;
+                background-color: #3a3e44 !important;
+            }
+
+            .ws-Buttons-NavigationColor-Text.ux-boothDropdown-linkText,
+            .ux-mobileNav button.ux-booth-dropdown i {
+                color: #fff !important;
+            }
+
+            .ux-app-sop .ux-grid-content.ux-grid-tiles .ux-gridWrapper--tile {
+                width: 50% !important;
+            }
+
+            .ux-priceListTile .ux-tile-item-price {
+                padding: 10px 0;
+                height: 38px;
+            }
+
+            .ux-priceListTile .ux-tile-item-title {
+                padding: 10px;
+            }
+
+            .ux-priceListTile .ux-tile-wrapper-image {
+                height: 160px;
+            }
+
+            .ux-tile-wrapper-item {
+                height: 248px !important;
+            }
+
+            /*.store-category-tile {
+                height: 180px;
+            }*/
+
+            .store-category-tile>span {
+                height: 40px;
+                padding: 10px;
+            }
+
+            .ux-itemDetailsUpsellRelatedWrapper,
+            .ux-widget-heading,
+            .callout-hero h1 {
+                display: none;
+            }
+
+            .ux-productInfo-productDescription {
+                padding: 0px;
+            }
+
+            .ux-container-order-details .ux-close-container .close,
+            .ux-cartItemDetails .ux-close-container .close {
+                font-size: 2rem;
+                margin-bottom: 10px;
+            }
+
+            .callout-hero h4 {
+                margin: 20px;
+            }
+
+            .ux-priceListTile .ux-tile-item-title,
+            .store-category-tile>span {
+                font-size: .8rem;
+            }
+
+            .panel-default>.panel-heading {
+                padding: 15px;
+            }
+            
+            
+            
+            
+            
+            
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <!-- CENTERPAGE -->
+
+    <div class="modal fade" id="modalTC" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Terms &amp; Conditions</h4>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        Price: The Contract Price is based on the prevailing costs at the time of the quotation. If in the period up to the completion of the Contract there is any increase in the cost to the Company or a variation in the services required then the Contract Price shall be amended accordingly. Prices quoted are exclusive of VAT and any other taxes, levies or similar charges whatsoever, all of which shall be paid by the customer.
+                    </p>
+
+                    <p>
+                        Payment: For Exhibition Mains services only, the customer shall pay, in sterling, 50% of the contract price immediately with the initial order and the remaining 50% will be invoiced and due for payment within seven days of the end of tenancy date. For all other services, the customer shall pay, in sterling, in full thirty days after the invoice date or fourteen days prior to the event opening whichever is sooner. If the Customer fails to make full payment on the due dates, the Company is entitled, without prejudice to any other right or remedy available, to terminate the relevant contract and suspend any performance of contract work. The Company reserves the right to charge interest at 3% above the Bank of England base rate on amounts not paid on the due date. The customer shall also pay, in sterling, the full amount of any additional orders that are placed on site at the time of ordering at the given venue, during the build up period of the named event. All additional orders, must be in writing and authorised by the customer and also a ExCeL Event Services representative.
+                    </p>
+
+                    <p>
+                        Performance: All customers' orders must be placed in writing. No Contract shall be created unless the Company accepts the order, The Company shall be relieved of its contractual obligations in the event that performance thereof is prevented or delayed directly or indirectly by an act of God, war, riot, strike, labour disturbance, industrial dispute, fire, flood, explosion, shortage of material or labour or any cause beyond the control of the Company. If for any of these reasons the Contract is not completed the Customer shall pay the Contract Price less the costs not expended to date. Performance of the Contract is subject to the availability of the Company's property. The Company at is sole discretion reserves the right to substitute unavailable Company property of a similar quality, specification and performance. The Company may sub-contract all or any part of the services. The Company contracts for itself and as agent of and trustee for its employees and sub-contractors and their employees and any reference in these Conditions to the Company shall be deemed to include every such employee and sub-contractor.
+                    </p>
+
+                    <p>
+                        Consequential Loss: The Company shall not under any circumstances be liable for any direct or indirect consequential loss arising from the services howsoever, whensoever, or whatsoever caused and whether or not resulting from a negligent act or omission by the Company.
+                    </p>
+
+                    <p>
+                        Company Property: All property used or supplied by the Company in connection with the Contract shall, unless expressly agreed by the Company in writing, be on hire for the duration of the exhibition. The Customer will be responsible for the Company's property from the time of the delivery up until the time of collection by the Company. The Customer shall insure all of the Company's property for its replacement cost and indemnify the Company against loss or damage to any of the Company's property howsoever caused. The Customer shall not assign, re-hire or part with possession of the Company's property. The Customer warrants that it is the owner of exhibits and any other property entrusted to the Company's custody or control or is authorized by the owner to accept these conditions on the owners behalf. The Company shall not be liable for loss of or damage to the Customers property howsoever, whensoever or wheresoever caused and whether or not such loss or damage results from negligent act or omission by the Company.
+                    </p>
+
+                    <p>
+                        Liability To Others: The Customer shall be liable for and shall indemnify the Company against claims from injuries sustained by persons and loss of or damage to other person's property arising during the hire period howsoever caused unless such injury loss or damage results from a negligent act or omission from the Company.
+                    </p>
+
+                    <p>
+                        Regulations: The Customer shall comply with all regulations and conditions imposed by an exhibition organizer, promoter, hall owner or local or other authority and shall be responsible for obtaining their written consent to any modification there to or waiver thereof as may be necessary to enable the Company to perform the Contract. The Customer shall communicate to the Company such as these regulations and conditions as may affect the services and indemnify the Company against all liabilities arising from non compliance with any of the said regulations and conditions unless resulting from negligent act or omission of the Company.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="//code.tidio.co/wpo2fmwvzqw8mtbph4civ0ctxsnqka6w.js"></script>
+
+</body>
+
+
+
+
+
+
+
+
+
+</html>
